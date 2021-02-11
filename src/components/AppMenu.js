@@ -26,16 +26,16 @@ export default function AppMenu({
     // Push('/tooling');   Can't get external URL to work with router
     window.location.href = 'http://tooling/';  
   };
-  // const handleEng = () => {
-  //   setAnchorEl(null);
-  //   // Push('/tooling');   Can't get external URL to work with router
-  //   window.location.href = 'http://eng/';  
-  // };
-  const handleProd = () => {
+  const handleEng = () => {
     setAnchorEl(null);
     // Push('/tooling');   Can't get external URL to work with router
-    window.location.href = 'http://prod/';  
+    window.location.href = 'http://eng/';  
   };
+  // const handleProd = () => {
+  //   setAnchorEl(null);
+  //   // Push('/tooling');   Can't get external URL to work with router
+  //   window.location.href = 'http://prod/';  
+  // };
   const handleSuper = () => {
     setAnchorEl(null);
     // Push('/tooling');   Can't get external URL to work with router
@@ -69,8 +69,8 @@ export default function AppMenu({
         onClose={handleClose}
       >
         <MenuItem onClick={handleTooling}>Tooling</MenuItem>
-        {/* <MenuItem onClick={handleEng}>Eng</MenuItem> */}
-        <MenuItem onClick={handleProd}>Prod</MenuItem>
+        <MenuItem onClick={handleEng}>Eng</MenuItem>
+        {/* <MenuItem onClick={handleProd}>Prod</MenuItem> */}
         <MenuItem onClick={handleSuper}>Super</MenuItem>
         <MenuItem onClick={handleGM}>GM</MenuItem>
         <MenuItem onClick={handleSignout}>Sign Out</MenuItem>
